@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lookandfell;
 
 /**
  *
- * @author hudson
+ * @author hudson schumaker
  */
 import java.awt.Dimension;
 import javax.swing.JFrame;
@@ -58,13 +53,11 @@ public class JavaMacDockTest {
             }
         });
     }
-
-  // our "callback" method. this method is called by the DockBarAdapter
+    // our "callback" method. this method is called by the DockBarAdapter
     // when a "handleOpenFile" event is received.
     public void handleOpenFileEvent(ApplicationEvent e) {
         JOptionPane.showMessageDialog(frame, "Got the file: " + e.getFilename());
     }
-
 }
 
 /**
@@ -80,7 +73,7 @@ class DockBarAdapter extends ApplicationAdapter {
         this.handler = handler;
     }
 
-  // this is the method that is called when a drag and drop event is received
+    // this is the method that is called when a drag and drop event is received
     // by the Application, and passed to us. In turn, we call back to the main
     // class to let it know this event was received so it can deal with the
     // event.

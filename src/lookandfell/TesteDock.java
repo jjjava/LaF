@@ -1,13 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lookandfell;
 
 import com.apple.eawt.AppEventListener;
 import com.apple.eawt.Application;
-import com.apple.eawt.ApplicationEvent;
 
 /**
  *
@@ -53,7 +47,6 @@ public class TesteDock {
     public static void main(String args[]) {
         TesteDock t = new TesteDock();
     }
-
 }
 
 class teste implements AppEventListener {
